@@ -1046,6 +1046,12 @@ a {
   color: #3d4754;
 }
 
+.pick__card a {
+  color: var(--accent);
+  font-weight: 600;
+  text-underline-offset: 0.15em;
+}
+
 .pick__card ul {
   margin: 0;
   padding-left: 1.05rem;
