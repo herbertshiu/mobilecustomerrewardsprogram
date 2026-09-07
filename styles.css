@@ -990,11 +990,19 @@ a {
 }
 
 /* Need-based picker (replaces comparison table) */
-.pick {
+.memo-stack {
   display: grid;
-  gap: 0.9rem;
+  gap: 0.75rem;
   margin: 1.25rem 0 2rem;
-  grid-template-columns: 1fr;
+}
+
+.memo-stack__label {
+  margin: 0.35rem 0 0 !important;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: var(--muted);
 }
 
 .pick__card {
@@ -1038,25 +1046,6 @@ a {
   color: #3d4754;
 }
 
-.pick__fit {
-  margin: 0 0 0.85rem !important;
-  padding: 0.55rem 0.7rem;
-  background: #f3f6f8;
-  border-radius: 0.4rem;
-  font-size: 0.9rem !important;
-  font-weight: 600;
-  color: var(--ink) !important;
-}
-
-.pick__card--focus .pick__fit {
-  background: rgba(11, 110, 106, 0.1);
-}
-
-.pick__fit a {
-  color: var(--accent);
-  text-underline-offset: 0.15em;
-}
-
 .pick__card ul {
   margin: 0;
   padding-left: 1.05rem;
@@ -1068,13 +1057,6 @@ a {
   margin-top: 0.25rem;
 }
 
-.sticky-board {
-  display: grid;
-  gap: 0.85rem;
-  margin: 1.1rem 0 2rem;
-  grid-template-columns: 1fr;
-}
-
 .sticky {
   background: #fff8e8;
   border: 1px solid #e6d9b8;
@@ -1082,6 +1064,7 @@ a {
   padding: 1rem 1.05rem;
   box-shadow: 0 10px 22px rgba(16, 24, 32, 0.06);
   transform: rotate(-0.4deg);
+  margin-bottom: 1.1rem;
 }
 
 .sticky--focus {
