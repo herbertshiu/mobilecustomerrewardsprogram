@@ -994,12 +994,7 @@ a {
   display: grid;
   gap: 0.9rem;
   margin: 1.25rem 0 2rem;
-}
-
-@media (min-width: 820px) {
-  .pick {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: 1fr;
 }
 
 .pick__card {
@@ -1077,12 +1072,7 @@ a {
   display: grid;
   gap: 0.85rem;
   margin: 1.1rem 0 2rem;
-}
-
-@media (min-width: 820px) {
-  .sticky-board {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: 1fr;
 }
 
 .sticky {
