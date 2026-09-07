@@ -1014,9 +1014,11 @@ a {
 }
 
 .pick__card--focus {
-  border-left-color: var(--accent);
-  box-shadow: 0 12px 28px rgba(11, 110, 106, 0.1);
-  background: linear-gradient(180deg, #f3fbfa 0%, #fff 42%);
+  border: 2px solid var(--accent);
+  border-left-width: 6px;
+  box-shadow: 0 16px 36px rgba(11, 110, 106, 0.16);
+  background: linear-gradient(180deg, #e7f7f5 0%, #fff 38%);
+  padding: 1.35rem 1.35rem 1.4rem;
 }
 
 .pick__tag {
@@ -1030,6 +1032,25 @@ a {
 
 .pick__card--focus .pick__tag {
   color: var(--accent);
+}
+
+.pick__vendor {
+  margin: 0 0 0.55rem !important;
+  font-family: var(--display);
+  font-size: 1.35rem !important;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink) !important;
+}
+
+.pick__vendor a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pick__vendor a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .pick__card h3 {
@@ -1073,11 +1094,37 @@ a {
   margin-bottom: 1.1rem;
 }
 
+.memo-stack__label--focus {
+  color: var(--accent);
+}
+
 .sticky--focus {
-  background: #e8f7f5;
-  border-color: #b5ddd8;
-  transform: rotate(0.5deg);
-  box-shadow: 0 14px 28px rgba(11, 110, 106, 0.12);
+  background: linear-gradient(160deg, #d8f3ef 0%, #eefaf8 55%, #fff 100%);
+  border: 2px solid var(--accent);
+  transform: rotate(0.3deg) scale(1.01);
+  box-shadow: 0 18px 34px rgba(11, 110, 106, 0.18);
+  padding: 1.2rem 1.2rem 1.25rem;
+}
+
+.sticky--focus strong {
+  font-size: 1.25rem;
+  margin-bottom: 0.55rem;
+}
+
+.sticky--focus strong a {
+  color: var(--accent);
+}
+
+.sticky__link {
+  margin: 0.75rem 0 0 !important;
+  font-size: 0.92rem !important;
+  font-weight: 700;
+}
+
+.sticky__link a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .sticky strong {
